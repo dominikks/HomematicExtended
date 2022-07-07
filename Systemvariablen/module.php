@@ -640,7 +640,7 @@ class HomeMaticSystemvariablen extends HMBase
     private function ReadSysVars()
     {
         // Systemvariablen
-        $HMScript = 'SysVars=dom.GetObject(ID_SYSTEM_VARIABLES).EnumUsedIDs();';
+        $HMScript = 'SysVars=dom.GetObject(ID_SYSTEM_VARIABLES).EnumIDs();';
 
         try {
             $HMScriptResult = $this->LoadHMScript('SysVar.exe', $HMScript);
